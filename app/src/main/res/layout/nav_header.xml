@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:background="#272727">
+
+    <ImageView
+        android:id="@+id/navHeaderImageView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/account_logo_foreground"/>
+
+    <TextView
+        android:id="@+id/navHeaderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

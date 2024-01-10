@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".SignUpActivity">
+
+<ImageView
+android:id="@+id/signupLogoImageView"
+android:layout_width="120dp"
+android:layout_height="120dp"
+android:src="@mipmap/trade_logo"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="32dp"/>
+
+<EditText
+android:id="@+id/signupUsernameEditText"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/signupLogoImageView"
+android:layout_marginTop="16dp"
+    android:hint="Username"/>
+
+<EditText
+android:id="@+id/signupEmailEditText"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/signupUsernameEditText"
+android:layout_marginTop="16dp"
+
+    android:hint="Email"
+    android:inputType="textEmailAddress"/>
+
+<EditText
+android:id="@+id/signupPasswordEditText"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/signupEmailEditText"
+android:layout_marginTop="16dp"
+
+    android:hint="Password"
+    android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/signupConfirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupPasswordEditText"
+        android:layout_marginTop="16dp"
+
+        android:hint="Confirm Password"
+        android:inputType="textPassword"/>
+
+    <Button
+android:id="@+id/signupButton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/signupConfirmPasswordEditText"
+android:layout_marginTop="24dp"
+android:text="Sign Up"
+android:background="@drawable/rounded_button_background"
+android:textColor="#FFFFFF"/> <!-- White text color -->
+
+    </RelativeLayout>
